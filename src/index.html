@@ -60,44 +60,44 @@
 
           <div>
             <div class="flex items-center space-x-8 mt-3">
-              <div class="rounded py-2 flex cursor-pointer items-center space-x-2">
+              <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
                 <span class="flex place-content-center items-center rounded-full">
                   <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                   </svg>
                 </span>
-                <span class="text-xs font-light text-base-content text-opacity-80 ">
+                <span class="text-xs font-light  ">
                   Reply 
                 </span>
               </div>
-              <button data-id="boost_action" class="rounded py-2 flex cursor-pointer items-center space-x-2 boost">
+              <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
                 <span class="flex place-content-center items-center rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  <svg fill="currentColor" class="w-4 h-4" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
                   </svg>
                 </span>
-                <span class="text-xs font-light text-base-content text-opacity-80 ">
+                <span class="text-xs font-light">
                   Boost 
                 </span>
               </button>
-              <button data-id="like_action"  class="like rounded py-2 flex cursor-pointer items-center space-x-2 like_with_label">
+              <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
                 <span class="flex place-content-center items-center rounded-full">
                   <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                   </svg>
                 </span>
-                <span class="text-xs font-light text-base-content text-opacity-80 ">
+                <span class="text-xs font-light">
                   Like 
                 </span>
               </button>
               <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
-                <div tabindex="0" class="rounded py-2 flex cursor-pointer items-center space-x-2">
+                <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
                   <span class="flex place-content-center items-center rounded-full">
                     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                       <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
                     </svg>
                   </span>
-                  <span id="more-menu" class="text-xs font-light text-base-content text-opacity-80 ">More</span>
+                  <span id="more-menu" class="text-xs font-light">More</span>
                 </div>
               </div>
             </div>
@@ -319,6 +319,25 @@
         </div>
       </section>
 
+      <!-- MENU -->
+      <div class="p-3 bg-base-100 mt-6 flex items-center rounded shadow">
+        <div class="flex-1 space-x-2 items-center flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1 ml-2 place-self-center text-base-content text-opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4" />
+          </svg>
+          <select class="select select-bordered select-sm -ml-1 ">
+            <option>Most old</option> 
+            <option>Most recent</option> 
+            <option>Most voted</option>
+          </select> 
+        </div>
+
+        <div class="btn-group">
+          <button class="btn btn-xs btn-active">Flat</button> 
+          <button class="btn btn-xs ">Nested</button> 
+        </div> 
+      </div>
+      <!-- /MENU -->
 
       <div id="comment_1" class="activity p-3 rounded mt-3 bg-base-100 shadow">
         <div class="flex items-top">
