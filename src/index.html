@@ -9,14 +9,14 @@
   <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body class="">
- <div title="Change Theme" class="absolute left-3 top-3 w-48 dropdown dropdown-end">
-  <div tabindex="0" class="normal-case btn-outline btn btn-small"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current md:mr-2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg> 
+  <div title="Change Theme" class="lg:absolute hidden left-3 top-3 :w-48 dropdown dropdown-end">
+    <div tabindex="0" class="normal-case btn-outline btn btn-small"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current md:mr-2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg> 
     <span class="hidden md:inline">Change Theme</span> 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" class="inline-block w-4 h-4 ml-1 fill-current"><path d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path></svg></div> <div class="mt-16 overflow-y-auto shadow-2xl top-px dropdown-content h-96 w-52 rounded-b-box bg-base-200 text-base-content"><ul class="p-4 menu compact"><li><a tabindex="0" data-set-theme="light" data-act-class="active">🌝  light</a></li><li><a tabindex="0" data-set-theme="dark" data-act-class="active">🌚  dark</a></li><li><a tabindex="0" data-set-theme="cupcake" data-act-class="active">🧁  cupcake</a></li><li><a tabindex="0" data-set-theme="bumblebee" data-act-class="active">🐝  bumblebee</a></li><li><a tabindex="0" data-set-theme="emerald" data-act-class="active">✳️  Emerald</a></li><li><a tabindex="0" data-set-theme="corporate" data-act-class="active">🏢  Corporate</a></li><li><a tabindex="0" data-set-theme="synthwave" data-act-class="active">🌃  synthwave</a></li><li><a tabindex="0" data-set-theme="retro" data-act-class="active">👴  retro</a></li><li><a tabindex="0" data-set-theme="cyberpunk" data-act-class="active">🤖  cyberpunk</a></li><li><a tabindex="0" data-set-theme="valentine" data-act-class="active">🌸  valentine</a></li><li><a tabindex="0" data-set-theme="halloween" data-act-class="active">🎃  halloween</a></li><li><a tabindex="0" data-set-theme="garden" data-act-class="active">🌷  garden</a></li><li><a tabindex="0" data-set-theme="forest" data-act-class="active">🌲  forest</a></li><li><a tabindex="0" data-set-theme="aqua" data-act-class="active">🐟  aqua</a></li><li><a tabindex="0" data-set-theme="lofi" data-act-class="active">👓  lofi</a></li><li><a tabindex="0" data-set-theme="pastel" data-act-class="active">🖍  pastel</a></li><li><a tabindex="0" data-set-theme="fantasy" data-act-class="active">🧚&zwj;♀️  fantasy</a></li><li><a tabindex="0" data-set-theme="wireframe" data-act-class="active">📝  Wireframe</a></li><li><a tabindex="0" data-set-theme="black" data-act-class="active">🏴  black</a></li><li><a tabindex="0" data-set-theme="luxury" data-act-class="active">💎  luxury</a></li><li><a tabindex="0" data-set-theme="dracula" data-act-class="active">🧛&zwj;♂️  dracula</a></li><li><a tabindex="0" data-set-theme="cmyk" data-act-class="active">🖨  CMYK</a></li></ul></div>
   </div>
   <div style="max-width: 600px" class="flex-grow mx-auto">
     <main class="md:flex flex-col md:mx-0 pb-4">
-      <section class="w-full mx-auto  mt-2 rounded shadow bg-base-100">
+      <section class="w-full mx-auto  lg:mt-2 lg:rounded shadow bg-base-100">
       
         <div role="banner" class="relative z-30 border-b border-base-300">
           <div class="relative z-50 rounded rounded-b-none bg-base-100">
@@ -58,47 +58,46 @@
             </div>
           </div>
 
-          <div>
-            <div class="flex items-center space-x-8 mt-3">
-              <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+
+          <div class="flex justify-between lg:items-center space-x-8 mt-3">
+            <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light  ">
+                Reply 
+              </span>
+            </div>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg fill="currentColor" class="w-6 h-6 lg:w-6 lg:h-6" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Boost 
+              </span>
+            </button>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Like 
+              </span>
+            </button>
+            <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
+              <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
                 <span class="flex place-content-center items-center rounded-full">
-                  <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  <svg class="w-6 h-6 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
                   </svg>
                 </span>
-                <span class="text-xs font-light  ">
-                  Reply 
-                </span>
-              </div>
-              <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                <span class="flex place-content-center items-center rounded-full">
-                  <svg fill="currentColor" class="w-4 h-4" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
-                  </svg>
-                </span>
-                <span class="text-xs font-light">
-                  Boost 
-                </span>
-              </button>
-              <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                <span class="flex place-content-center items-center rounded-full">
-                  <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                  </svg>
-                </span>
-                <span class="text-xs font-light">
-                  Like 
-                </span>
-              </button>
-              <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
-                <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                    </svg>
-                  </span>
-                  <span id="more-menu" class="text-xs font-light">More</span>
-                </div>
+                <span id="more-menu" class="text-xs hidden lg:block font-light">More</span>
               </div>
             </div>
           </div>
@@ -111,7 +110,7 @@
               open_boosts: false,
               open_links: false
             }" >
-            <div class="border-t pt-2 my-3 border-base-300 flex items-start space-x-4">
+            <div class="border-t pt-2 my-3 border-base-300 flex justify-between lg:items-start space-x-4">
               <div 
                 :class="open_participants ? 'bg-primary' : ''"
                 @click="open_participants = ! open_participants" 
@@ -288,26 +287,26 @@
             </div>
             <div x-show="open_links" @click.outside="open_links = false">
               <div class="flex flex-col space-y-1">
-                <a href="#" class="text-sm link link-accent space-x-1 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <a href="#" class="text-sm link link-accent space-x-1 flex items-center truncate text-ellipsis overflow-hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 hidden lg:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                   </svg>
                   <span>https://bonfirenetworls.org</span>
                 </a>
-                <a href="#" class="text-sm link link-accent space-x-1 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <a href="#" class="text-sm link link-accent space-x-1 flex items-center truncate text-ellipsis overflow-hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 hidden lg:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                   </svg>
                   <span>https://twitter.com/@switchtobonfire</span>
                 </a>
-                <a href="#" class="text-sm link link-accent space-x-1 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <a href="#" class="text-sm link link-accent space-x-1 flex items-center truncate text-ellipsis overflow-hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 hidden lg:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                   </svg>
                   <span>https://giorgio.gilest.ro/2021/12/26/covid-lessons-i-have-learned-in-2021/</span>
                 </a>
-                <a href="#" class="text-sm link link-accent space-x-1 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <a href="#" class="text-sm link link-accent space-x-1 flex items-center truncate text-ellipsis overflow-hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 hidden lg:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                   </svg>
                   <span>https://indieweb.social/web/@bonfire/107513661455091934</span>
@@ -320,7 +319,7 @@
       </section>
 
       <!-- MENU -->
-      <div class="p-3 bg-base-100 mt-6 flex items-center rounded shadow">
+      <div class="py-6 lg:py-3 p-3 border-t border-base-200 border-b bg-base-100 lg:mt-6 flex items-center lg:rounded lg:shadow">
         <div class="flex-1 space-x-2 items-center flex">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1 ml-2 place-self-center text-base-content text-opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4" />
@@ -339,7 +338,7 @@
       </div>
       <!-- /MENU -->
 
-      <div id="comment_1" class="activity p-3 rounded mt-3 bg-base-100 shadow">
+      <div id="comment_1" class="activity py-6 lg:py-3 p-3 lg:rounded lg:mt-3 bg-base-100 lg:shadow border-b-4 border-b-base-200">
         <div class="flex items-top">
           <div class="avatar">
             <div class="w-8 h-8 bg-base-300 mask mask-squircle">
@@ -358,48 +357,48 @@
             <div class="prose mt-1 text-sm">
               A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.
             </div>
-            <div class="flex items-center space-x-8 mt-3">
-              <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+                      <div class="flex justify-between lg:items-center space-x-8 mt-3">
+            <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light  ">
+                Reply 
+              </span>
+            </div>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg fill="currentColor" class="w-6 h-6 lg:w-6 lg:h-6" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Boost 
+              </span>
+            </button>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Like 
+              </span>
+            </button>
+            <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
+              <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
                 <span class="flex place-content-center items-center rounded-full">
-                  <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  <svg class="w-6 h-6 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
                   </svg>
                 </span>
-                <span class="text-xs font-light  ">
-                  Reply 
-                </span>
-              </div>
-              <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                <span class="flex place-content-center items-center rounded-full">
-                  <svg fill="currentColor" class="w-4 h-4" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
-                  </svg>
-                </span>
-                <span class="text-xs font-light">
-                  Boost 
-                </span>
-              </button>
-              <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                <span class="flex place-content-center items-center rounded-full">
-                  <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                  </svg>
-                </span>
-                <span class="text-xs font-light">
-                  Like 
-                </span>
-              </button>
-              <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
-                <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                    </svg>
-                  </span>
-                  <span id="more-menu" class="text-xs font-light">More</span>
-                </div>
+                <span id="more-menu" class="text-xs hidden lg:block font-light">More</span>
               </div>
             </div>
+          </div>
 
             <div 
               x-cloak 
@@ -449,7 +448,7 @@
         </div>
       </div>
 
-      <div id="comment_2" class="activity p-3 rounded mt-3 bg-base-100 shadow">
+      <div id="comment_2" class="activity py-6 lg:py-3 p-3 lg:rounded lg:mt-3 bg-base-100 lg:shadow border-b-4 border-b-base-200">
         <div class="flex items-top">
           <div class="avatar">
             <div class="w-8 h-8 bg-base-300 mask mask-squircle">
@@ -468,53 +467,53 @@
             <div class="prose mt-1 text-sm">
               A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.
             </div>
-              <div class="flex items-center space-x-8 mt-3">
-                <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light  ">
-                    Reply 
-                  </span>
-                </div>
-                <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg fill="currentColor" class="w-4 h-4" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light">
-                    Boost 
-                  </span>
-                </button>
-                <button <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light">
-                    Like 
-                  </span>
-                </button>
-                <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
-                  <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                    <span class="flex place-content-center items-center rounded-full">
-                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                      </svg>
-                    </span>
-                    <span id="more-menu" class="text-xs font-light">More</span>
-                  </div>
-                </div>
-             </div>
+                        <div class="flex justify-between lg:items-center space-x-8 mt-3">
+            <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light  ">
+                Reply 
+              </span>
+            </div>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg fill="currentColor" class="w-6 h-6 lg:w-6 lg:h-6" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Boost 
+              </span>
+            </button>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Like 
+              </span>
+            </button>
+            <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
+              <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+                <span class="flex place-content-center items-center rounded-full">
+                  <svg class="w-6 h-6 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  </svg>
+                </span>
+                <span id="more-menu" class="text-xs hidden lg:block font-light">More</span>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
 
-      <div id="comment_3" class="activity p-3 rounded mt-3 bg-base-100 shadow">
+      <div id="comment_3" class="activity py-6 lg:py-3 p-3 lg:rounded lg:mt-3 bg-base-100 lg:shadow border-b-4 border-b-base-200">
         <div class="flex items-top">
           <div class="avatar">
             <div class="w-8 h-8 bg-base-300 mask mask-squircle">
@@ -533,48 +532,48 @@
             <div class="prose mt-1 text-sm">
               A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.
             </div>
-              <div class="flex items-center space-x-8 mt-3">
-                <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light  ">
-                    Reply 
-                  </span>
-                </div>
-                <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg fill="currentColor" class="w-4 h-4" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light">
-                    Boost 
-                  </span>
-                </button>
-                <button <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light">
-                    Like 
-                  </span>
-                </button>
-                <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
-                  <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                    <span class="flex place-content-center items-center rounded-full">
-                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                      </svg>
-                    </span>
-                    <span id="more-menu" class="text-xs font-light">More</span>
-                  </div>
-                </div>
-             </div>
+                        <div class="flex justify-between lg:items-center space-x-8 mt-3">
+            <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light  ">
+                Reply 
+              </span>
+            </div>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg fill="currentColor" class="w-6 h-6 lg:w-6 lg:h-6" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Boost 
+              </span>
+            </button>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Like 
+              </span>
+            </button>
+            <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
+              <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+                <span class="flex place-content-center items-center rounded-full">
+                  <svg class="w-6 h-6 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  </svg>
+                </span>
+                <span id="more-menu" class="text-xs hidden lg:block font-light">More</span>
+              </div>
+            </div>
+          </div>
              <div 
               x-cloak 
               x-data="{
@@ -706,7 +705,7 @@
         </div>
       </div>
 
-      <div id="comment_4" class="activity p-3 rounded mt-3 bg-base-100 shadow">
+      <div id="comment_4" class="activity py-6 lg:py-3 p-3 lg:rounded lg:mt-3 bg-base-100 lg:shadow border-b-4 border-b-base-200">
         <div class="flex items-top">
           <div class="avatar">
             <div class="w-8 h-8 bg-base-300 mask mask-squircle">
@@ -817,57 +816,53 @@
               
               Test
             </div>
-              <div class="flex items-center space-x-8 mt-1">
-                <div class="rounded py-2 flex cursor-pointer items-center space-x-2">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light text-base-content text-opacity-80 ">
-                    Reply 
-                  </span>
-                </div>
-                <button id="01FQVN5V42MQ2HF5JZ51YJY45Y" data-id="boost_action" class="rounded py-2 flex cursor-pointer items-center space-x-2 boost" data-phx-component="1">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg fill="currentColor" class="w-4 h-4" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light text-base-content text-opacity-80 ">
-                    Boost 
-                  </span>
-                </button>
-                <button data-id="like_action"  class="like rounded py-2 flex cursor-pointer items-center space-x-2 like_with_label" data-phx-component="2">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light text-base-content text-opacity-80 ">
-                    Like 
-                  </span>
-                </button>
-                <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
-                  <div tabindex="0" class="rounded py-2 flex cursor-pointer items-center space-x-2">
-                    <span class="flex place-content-center items-center rounded-full">
-                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                      </svg>
-                    </span>
-                    <span id="more-menu" class="text-xs font-light text-base-content text-opacity-80 ">More</span>
-                  </div>
-                </div>
-             </div>
+          <div class="flex justify-between lg:items-center space-x-8 mt-3">
+            <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light  ">
+                Reply 
+              </span>
+            </div>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg fill="currentColor" class="w-6 h-6 lg:w-6 lg:h-6" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Boost 
+              </span>
+            </button>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Like 
+              </span>
+            </button>
+            <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
+              <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+                <span class="flex place-content-center items-center rounded-full">
+                  <svg class="w-6 h-6 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  </svg>
+                </span>
+                <span id="more-menu" class="text-xs hidden lg:block font-light">More</span>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
 
-
-
-
-
-      <div id="comment_5" class="activity p-3 rounded mt-3 bg-base-100 shadow">
+      <div id="comment_5" class="activity py-6 lg:py-3 p-3 lg:rounded lg:mt-3 bg-base-100 lg:shadow border-b-4 border-b-base-200">
         <div class="flex items-top">
           <div class="avatar">
             <div class="w-8 h-8 bg-base-300 mask mask-squircle">
@@ -928,48 +923,48 @@
               
               A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.
             </div>
-              <div class="flex items-center space-x-8 mt-3">
-                <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light  ">
-                    Reply 
-                  </span>
-                </div>
-                <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg fill="currentColor" class="w-4 h-4" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light">
-                    Boost 
-                  </span>
-                </button>
-                <button <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                  <span class="flex place-content-center items-center rounded-full">
-                    <svg class="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                  </span>
-                  <span class="text-xs font-light">
-                    Like 
-                  </span>
-                </button>
-                <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
-                  <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
-                    <span class="flex place-content-center items-center rounded-full">
-                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                      </svg>
-                    </span>
-                    <span id="more-menu" class="text-xs font-light">More</span>
-                  </div>
-                </div>
-             </div>
+                        <div class="flex justify-between lg:items-center space-x-8 mt-3">
+            <div class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light  ">
+                Reply 
+              </span>
+            </div>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg fill="currentColor" class="w-6 h-6 lg:w-6 lg:h-6" stroke="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Boost 
+              </span>
+            </button>
+            <button class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+              <span class="flex place-content-center items-center rounded-full">
+                <svg class="w-6 h-6 lg:w-6 lg:h-6" stroke="currentColor" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </span>
+              <span class="text-xs hidden lg:block font-light">
+                Like 
+              </span>
+            </button>
+            <div x-data="{modal_flagging_activity: false}" aria-haspopup="true" class="dropdown dropdown-end feed_activity">
+              <div tabindex="0" class="flex cursor-pointer text-content-primary text-opacity-80 items-center space-x-2 group hover:text-primary hover:text-opacity-100">
+                <span class="flex place-content-center items-center rounded-full">
+                  <svg class="w-6 h-6 lg:w-6 lg:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  </svg>
+                </span>
+                <span id="more-menu" class="text-xs hidden lg:block font-light">More</span>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
