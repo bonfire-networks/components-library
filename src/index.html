@@ -2,6 +2,7 @@
 <html class="bg-base-200" data-theme="THEME_NAME">
 <head>
   <meta charset="UTF-8">
+  <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -703,9 +704,27 @@
               </div>
             </div>
             <div class="prose mt-1 text-sm">
-              <div class="my-3 collapse w-full border rounded-md border-base-200 bg-base-300 bg-opacity-20  collapse-arrow">
-                <input type="checkbox"> 
-                <div class="collapse-title">
+
+
+              <div 
+                x-cloak
+                x-data="{expanded: false}"
+                class="my-3 w-full p-3 relative border-l-4 border-l-base-300 border border-base-200 rounded-sm bg-base-300 bg-opacity-20">
+                <div class="absolute right-3 top-3 flex space-x-2 text-base-content text-opacity-80 items-center">
+                  <svg
+                    :class="expanded ? 'transform rotate-180 transition-transform duration-300' : 'transform rotate-0 transition-transform duration-300'"
+                    @click="expanded = ! expanded"  
+                    xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 cursor-pointer text-base-content text-opacity-80 hover:text-opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                  <a href="#comment_1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 cursor-pointer text-base-content text-opacity-80 hover:text-opacity-100" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="">
                   <div>
                     <div class="flex items-center justify-between flex-1">
                       <div class="flex items-baseline text-md">
@@ -718,36 +737,65 @@
                     <div class="prose text-sm mt-1">A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.</div>
                   </div> 
                 </div>
-                <div class="collapse-content"> 
+                <div 
+                  x-show="expanded"
+                  x-collapse
+                  class=""> 
                   <p>Collapse content reveals with focus. If you add a checkbox, you can control it using checkbox instead of focus. Or you can force-open/force-close using 
                     <span class="badge badge-outline">collapse-open</span> and 
                     <span class="badge badge-outline">collapse-close</span> classes.
                   </p>
                 </div>
               </div> 
+
+
               A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.
-              <div class="my-3 collapse w-full border rounded-md border-base-200 bg-base-300 bg-opacity-20 collapse-arrow">
-                <input type="checkbox"> 
-                <div class="collapse-title">
+              
+              
+
+              <div 
+                x-cloak
+                x-data="{expanded: false}"
+                class="my-3 w-full p-3 relative border-l-4 border-l-base-300 border border-base-200 rounded-sm bg-base-300 bg-opacity-20">
+                <div class="absolute right-3 top-3 flex space-x-2 text-base-content text-opacity-80 items-center">
+                  <svg
+                    :class="expanded ? 'transform rotate-180 transition-transform duration-300' : 'transform rotate-0 transition-transform duration-300'"
+                    @click="expanded = ! expanded"  
+                    xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 cursor-pointer text-base-content text-opacity-80 hover:text-opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                  <a href="#comment_3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 cursor-pointer text-base-content text-opacity-80 hover:text-opacity-100" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="">
                   <div>
                     <div class="flex items-center justify-between flex-1">
                       <div class="flex items-baseline text-md">
                         <a data-id="subject_name" class="font-semibold text-base-content hover:underline" href="#">
                           John Coltrane
                         </a>
-                        <span class="text-xs ml-1 text-base-content text-opacity-60 subject_username font-light">· 10min ago · <a class="link-hover link" href="#">#3</a></span>
+                        <span class="text-xs ml-1 text-base-content text-opacity-60 subject_username font-light">· 10min ago · <a class="link-hover link" href="#comment_3">#3</a></span>
                       </div>
                     </div>
                     <div class="prose text-sm mt-1">A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.</div>
                   </div> 
                 </div>
-                <div class="collapse-content"> 
+                <div 
+                  x-show="expanded"
+                  x-collapse
+                  class=""> 
                   <p>Collapse content reveals with focus. If you add a checkbox, you can control it using checkbox instead of focus. Or you can force-open/force-close using 
                     <span class="badge badge-outline">collapse-open</span> and 
                     <span class="badge badge-outline">collapse-close</span> classes.
                   </p>
                 </div>
               </div> 
+
+              
               Test
             </div>
               <div class="flex items-center space-x-8 mt-1">
@@ -817,28 +865,48 @@
               </div>
             </div>
             <div class="prose mt-1 text-sm">
-            <div class="my-3 collapse w-full border rounded-md border-base-200 bg-base-300 bg-opacity-20  collapse-arrow">
-                <input type="checkbox"> 
-                <div class="collapse-title">
+            <div 
+                x-cloak
+                x-data="{expanded: false}"
+                class="my-3 w-full p-3 relative border-l-4 border-l-base-300 border border-base-200 rounded-sm bg-base-300 bg-opacity-20">
+                <div class="absolute right-3 top-3 flex space-x-2 text-base-content text-opacity-80 items-center">
+                  <svg
+                    :class="expanded ? 'transform rotate-180 transition-transform duration-300' : 'transform rotate-0 transition-transform duration-300'"
+                    @click="expanded = ! expanded"  
+                    xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 cursor-pointer text-base-content text-opacity-80 hover:text-opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                  <a href="#comment_3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 cursor-pointer text-base-content text-opacity-80 hover:text-opacity-100" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="">
                   <div>
                     <div class="flex items-center justify-between flex-1">
                       <div class="flex items-baseline text-md">
                         <a data-id="subject_name" class="font-semibold text-base-content hover:underline" href="#">
                           John Coltrane
                         </a>
-                        <span class="text-xs ml-1 text-base-content text-opacity-60 subject_username font-light">· 10min ago · <a class="link-hover link" href="#">#3</a></span>
+                        <span class="text-xs ml-1 text-base-content text-opacity-60 subject_username font-light">· 10min ago · <a class="link-hover link" href="#comment_3">#3</a></span>
                       </div>
                     </div>
                     <div class="prose text-sm mt-1">A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.</div>
                   </div> 
                 </div>
-                <div class="collapse-content"> 
+                <div 
+                  x-show="expanded"
+                  x-collapse
+                  class=""> 
                   <p>Collapse content reveals with focus. If you add a checkbox, you can control it using checkbox instead of focus. Or you can force-open/force-close using 
                     <span class="badge badge-outline">collapse-open</span> and 
                     <span class="badge badge-outline">collapse-close</span> classes.
                   </p>
                 </div>
-              </div>
+              </div> 
+              
               A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964, at Van Gelder Studio in Englewood Cliffs.
             </div>
               <div class="flex items-center space-x-8 mt-3">
