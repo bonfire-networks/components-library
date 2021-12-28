@@ -3405,6 +3405,11 @@ html {
     border-radius: 0.25rem;
   }
 
+  .lg\:bg-base-100 {
+    --tw-bg-opacity: 1;
+    background-color: hsla(var(--b1) / var(--tw-bg-opacity));
+  }
+
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
