@@ -3373,6 +3373,10 @@ html {
     height: 1.5rem;
   }
 
+  .lg\:h-4 {
+    height: 1rem;
+  }
+
   .lg\:w-6 {
     width: 1.5rem;
   }
@@ -3381,12 +3385,20 @@ html {
     width: 12rem;
   }
 
+  .lg\:w-4 {
+    width: 1rem;
+  }
+
   .lg\:items-start {
     align-items: flex-start;
   }
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:rounded {
