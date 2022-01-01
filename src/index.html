@@ -321,19 +321,28 @@
       <!-- MENU -->
       <div class="py-6 lg:py-3 p-3 border-t border-base-200 border-b bg-base-100 lg:mt-6 flex items-center lg:rounded lg:shadow">
         <div class="flex-1 space-x-2 items-center flex">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1 ml-2 place-self-center text-base-content text-opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4" />
-          </svg>
-          <select class="select select-bordered select-sm -ml-1 ">
-            <option>Most old</option> 
-            <option>Most recent</option> 
-            <option>Most voted</option>
+          <label class="input-group">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1 ml-2 place-self-center text-base-content text-opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4" />
+              </svg>  
+            </span> 
+            <select class="select select-bordered select-sm -ml-1 ">
+            <option> 
+              <span>Oldest first</span>
+            </option> 
+            <option> 
+              <span>Newer first</span>
+            </option> 
+            <option>Most liked</option>
           </select> 
+          </label>
+          
         </div>
 
         <div class="btn-group">
-          <button class="btn btn-xs btn-active">Flat</button> 
-          <button class="btn btn-xs bg-base-200 text-base-content border-base-300 ">Nested</button> 
+          <button class="btn btn-xs btn-active">List view</button> 
+          <button class="btn btn-xs bg-base-200 text-base-content border-base-300 ">Three view</button> 
         </div> 
       </div>
       <!-- /MENU -->

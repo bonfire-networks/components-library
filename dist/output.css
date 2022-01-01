@@ -1589,6 +1589,17 @@ html {
   visibility: visible;
 }
 
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: .5rem .25rem;
+}
+
 .input {
   flex-shrink: 1;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
@@ -1613,8 +1624,37 @@ html {
   box-shadow: 0 0 0 2px hsl(var(--b1)), 0 0 0 4px hsla(var(--bc) / .2);
 }
 
+.input-group {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
 .input-group>*,.input-group>.input {
   border-radius: 0;
+}
+
+.input-group :where(span) {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b3) / var(--tw-bg-opacity, 1));
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.input-group :first-child {
+  border-top-left-radius: var(--rounded-btn, .5rem);
+  border-top-right-radius: 0;
+  border-bottom-left-radius: var(--rounded-btn, .5rem);
+  border-bottom-right-radius: 0;
+}
+
+.input-group :last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: var(--rounded-btn, .5rem);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: var(--rounded-btn, .5rem);
 }
 
 .link {
@@ -2306,6 +2346,11 @@ html {
 .dropdown.dropdown-hover:hover .dropdown-content,.dropdown.dropdown-open .dropdown-content,.dropdown:focus-within .dropdown-content,.dropdown:focus .dropdown-content {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
+}
+
+.label a:hover {
+  --tw-text-opacity: 1;
+  color: hsla(var(--bc) / var(--tw-text-opacity, 1));
 }
 
 .input-disabled,.input[disabled] {
